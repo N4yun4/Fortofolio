@@ -440,7 +440,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border-radius: 3px;
           padding: 1px 6px; font-size: 11px;
         }
-      `}),(0,Q.jsx)(`div`,{className:`sc-root`,role:`navigation`,children:Hp.map((r,i)=>(0,Q.jsxs)(`div`,{className:`sc-bar-outer${e===i?` active`:``}${n?` mounted`:``}`,onClick:()=>{e===i?window.open(r.href,`_blank`):t(i)},onMouseEnter:()=>t(i),children:[(0,Q.jsx)(`div`,{className:`sc-bar-red`}),(0,Q.jsxs)(`div`,{className:`sc-bar`,children:[(0,Q.jsx)(`img`,{className:`sc-char`,src:Bp[i],alt:``}),(0,Q.jsx)(`div`,{className:`sc-bar-fill`}),(0,Q.jsx)(`div`,{className:`sc-bar-shade`}),(0,Q.jsxs)(`div`,{className:`sc-bar-content`,children:[(0,Q.jsx)(`div`,{className:`sc-role`,style:{color:e===i?Vp[i].color:`#fff`},children:Vp[i].text}),(0,Q.jsxs)(`div`,{className:`sc-main`,children:[(0,Q.jsxs)(`div`,{className:`sc-main-top`,children:[(0,Q.jsx)(`span`,{className:`sc-icon`,children:r.icon}),(0,Q.jsx)(`div`,{className:`sc-label`,children:r.label})]}),(0,Q.jsx)(`div`,{className:`sc-handle`,children:r.handle})]}),(0,Q.jsx)(`div`,{className:`sc-stats`,children:r.stats.map(e=>(0,Q.jsx)(`div`,{className:`sc-stat`,children:(0,Q.jsxs)(`div`,{className:`sc-stat-top`,children:[(0,Q.jsx)(`span`,{className:`sc-stat-tag`,style:{color:e.color,borderColor:e.color},children:e.tag}),(0,Q.jsx)(`span`,{className:`sc-stat-num`,children:e.value})]})},e.tag))})]})]})]},r.id))}),n&&(0,Q.jsxs)(`div`,{className:`sc-open-hint`,children:[(0,Q.jsx)(`div`,{className:`sc-open-platform`,children:Hp[e].label}),(0,Q.jsx)(`div`,{className:`sc-open-sub`,children:Hp[e].handle})]},e),(0,Q.jsxs)(`div`,{className:`sc-footer${n?` mounted`:``}`,children:[(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`↑↓`}),(0,Q.jsx)(`span`,{children:`SELECT`})]}),(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`↵`}),(0,Q.jsx)(`span`,{children:`OPEN`})]}),(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`ESC`}),(0,Q.jsx)(`span`,{children:`BACK`})]})]})]})}var Wp=`/Fortofolio/assets/char3-DAaUGPoZ.png`,Gp=`/Fortofolio/assets/mainm-Dt0EWjBj.jpeg`,Kp=`/Fortofolio/assets/mainm2-DzPik5aQ.jpeg`,qp=`/Fortofolio/assets/mainf-BHecycgQ.jpeg`,Jp=[Ip,Lp,Wp],Yp=[Gp,Kp,qp],Xp=[{upper:[`Name: Nayun`,`Role: Newbie AMV Maker & Junior Stock Market Analyst`,`Risk comes from not knowing what you are doing.(Warren Buffett)`],lower:`Low Cortisol people 🍃`},{upper:[`Specializes in AMV editing with After Effect`,`Tracks stock market trends and technical analysis daily.`,`just an ordinary human who likes playing games`],lower:`creative × analytical`},{upper:[`Just someone who loves editing photos and videos since childhood..`,`Stock analysis: reading charts and fundamental stock like reading a story.`,`Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.(Warren Buffett)`],lower:`always learning, always improving, always chill.`}],Zp=[{text:`NAYUN`,color:`#e8c100`,bg:`rgba(232,193,0,0.12)`,border:`rgba(232,193,0,0.5)`},{text:`SKILL`,color:`#4a8fff`,bg:`rgba(74,143,255,0.12)`,border:`rgba(74,143,255,0.5)`},{text:`STORY`,color:`#4a8fff`,bg:`rgba(74,143,255,0.12)`,border:`rgba(74,143,255,0.5)`}],Qp=[{id:`identity`,label:`WHO I AM`},{id:`skills`,label:`WHAT I DO`},{id:`story`,label:`MY STORY`}];function $p(){let[e,t]=(0,w.useState)(0),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(!1),o=pt();return(0,w.useEffect)(()=>{let e=setTimeout(()=>r(!0),60);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&t(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&t(e=>Math.min(Qp.length-1,e+1)),e.key===`Enter`&&a(!0),e.key===`ArrowRight`&&a(!0),e.key===`ArrowLeft`&&(i?a(!1):o(-1)),(e.key===`Escape`||e.key===`Backspace`)&&o(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[e,o,i]),(0,Q.jsxs)(`div`,{id:`menu-screen`,children:[(0,Q.jsx)(`video`,{src:wp,autoPlay:!0,loop:!0,muted:!0,playsInline:!0}),i&&(0,Q.jsx)(`div`,{className:`sc-dim`},`dim-${e}`),i&&(0,Q.jsxs)(`div`,{className:`sc-reveal-panel${n?` mounted`:``}`,children:[(0,Q.jsx)(`div`,{className:`sc-reveal-upper-bar`,children:Xp[e].upper.map(e=>(0,Q.jsx)(`div`,{className:`sc-reveal-upper-line`,children:e},e))}),(0,Q.jsx)(`div`,{className:`sc-reveal-lower-bar`,children:Xp[e].lower})]},`panel-${e}`),i&&(0,Q.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Q.jsx)(`span`,{className:`sc-nav-arrow left`,children:`◄`}),(0,Q.jsx)(`span`,{className:`sc-nav-btn`,children:`LB`}),(0,Q.jsx)(`span`,{className:`sc-nav-dot`}),(0,Q.jsx)(`span`,{className:`sc-nav-btn`,children:`RB`}),(0,Q.jsx)(`span`,{className:`sc-nav-arrow right`,children:`►`})]},`nav-${e}`),i&&(0,Q.jsx)(`div`,{className:`sc-main-portrait-shell${n?` mounted`:``}`,children:(0,Q.jsx)(`img`,{className:`sc-main-portrait`,src:Yp[e],alt:``})},`portrait-${e}`),(0,Q.jsx)(`style`,{children:`
+      `}),(0,Q.jsx)(`div`,{className:`sc-root`,role:`navigation`,children:Hp.map((r,i)=>(0,Q.jsxs)(`div`,{className:`sc-bar-outer${e===i?` active`:``}${n?` mounted`:``}`,onClick:()=>{e===i?window.open(r.href,`_blank`):t(i)},onMouseEnter:()=>t(i),children:[(0,Q.jsx)(`div`,{className:`sc-bar-red`}),(0,Q.jsxs)(`div`,{className:`sc-bar`,children:[(0,Q.jsx)(`img`,{className:`sc-char`,src:Bp[i],alt:``}),(0,Q.jsx)(`div`,{className:`sc-bar-fill`}),(0,Q.jsx)(`div`,{className:`sc-bar-shade`}),(0,Q.jsxs)(`div`,{className:`sc-bar-content`,children:[(0,Q.jsx)(`div`,{className:`sc-role`,style:{color:e===i?Vp[i].color:`#fff`},children:Vp[i].text}),(0,Q.jsxs)(`div`,{className:`sc-main`,children:[(0,Q.jsxs)(`div`,{className:`sc-main-top`,children:[(0,Q.jsx)(`span`,{className:`sc-icon`,children:r.icon}),(0,Q.jsx)(`div`,{className:`sc-label`,children:r.label})]}),(0,Q.jsx)(`div`,{className:`sc-handle`,children:r.handle})]}),(0,Q.jsx)(`div`,{className:`sc-stats`,children:r.stats.map(e=>(0,Q.jsx)(`div`,{className:`sc-stat`,children:(0,Q.jsxs)(`div`,{className:`sc-stat-top`,children:[(0,Q.jsx)(`span`,{className:`sc-stat-tag`,style:{color:e.color,borderColor:e.color},children:e.tag}),(0,Q.jsx)(`span`,{className:`sc-stat-num`,children:e.value})]})},e.tag))})]})]})]},r.id))}),n&&(0,Q.jsxs)(`div`,{className:`sc-open-hint`,children:[(0,Q.jsx)(`div`,{className:`sc-open-platform`,children:Hp[e].label}),(0,Q.jsx)(`div`,{className:`sc-open-sub`,children:Hp[e].handle})]},e),(0,Q.jsxs)(`div`,{className:`sc-footer${n?` mounted`:``}`,children:[(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`↑↓`}),(0,Q.jsx)(`span`,{children:`SELECT`})]}),(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`↵`}),(0,Q.jsx)(`span`,{children:`OPEN`})]}),(0,Q.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Q.jsx)(`span`,{className:`sc-footer-key`,children:`ESC`}),(0,Q.jsx)(`span`,{children:`BACK`})]})]})]})}var Wp=`/Fortofolio/assets/char3-DAaUGPoZ.png`,Gp=`/Fortofolio/assets/mainm-Dt0EWjBj.jpeg`,Kp=`/Fortofolio/assets/mainm2-DzPik5aQ.jpeg`,qp=`/Fortofolio/assets/mainf-BHecycgQ.jpeg`,Jp=[Ip,Lp,Wp],Yp=[Gp,Kp,qp],Xp=[{upper:[`Name: Nayun`,`Role: Newbie AMV Maker & Junior Stock Market Analyst`,`Risk comes from not knowing what you are doing.(Warren Buffett)`],lower:`Low Cortisol people 🍃`},{upper:[`Specializes in AMV editing with After Effect`,`Tracks stock market trends and technical analysis daily.`,`just an ordinary human who likes playing games`],lower:`creative × analytical`},{upper:[`Just someone who loves editing photos and videos since childhood..`,`Stock analysis: reading charts and fundamental stock like reading a story.`,`Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.(Warren Buffett)`],lower:`always learning, always improving, always chill.`}],Zp=[{text:`NAYUN`,color:`#e8c100`,bg:`rgba(232,193,0,0.12)`,border:`rgba(232,193,0,0.5)`},{text:`SKILL`,color:`#4a8fff`,bg:`rgba(74,143,255,0.12)`,border:`rgba(74,143,255,0.5)`},{text:`STORY`,color:`#4a8fff`,bg:`rgba(74,143,255,0.12)`,border:`rgba(74,143,255,0.5)`}],Qp=[{id:`identity`,label:`WHO I AM`},{id:`skills`,label:`WHAT I DO`},{id:`story`,label:`MY STORY`}];function $p(){let[e,t]=(0,w.useState)(0),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(!1),o=pt();return(0,w.useEffect)(()=>{let e=setTimeout(()=>r(!0),60);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&t(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&t(e=>Math.min(Qp.length-1,e+1)),e.key===`Enter`&&a(!0),e.key===`ArrowRight`&&a(!0),e.key===`ArrowLeft`&&(i?a(!1):o(-1)),(e.key===`Escape`||e.key===`Backspace`)&&o(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[e,o,i]),(0,Q.jsxs)(`div`,{id:`menu-screen`,children:[(0,Q.jsx)(`video`,{src:wp,autoPlay:!0,loop:!0,muted:!0,playsInline:!0}),i&&(0,Q.jsx)(`div`,{className:`sc-dim`},`dim-${e}`),i&&(0,Q.jsxs)(`div`,{className:`sc-reveal-panel${n?` mounted`:``}`,children:[(0,Q.jsx)(`div`,{className:`sc-reveal-upper-bar`,children:Xp[e].upper.map(e=>(0,Q.jsx)(`div`,{className:`sc-reveal-upper-line`,children:e},e))}),(0,Q.jsx)(`div`,{className:`sc-reveal-lower-bar`,children:Xp[e].lower})]},`panel-${e}`),i&&(0,Q.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Q.jsx)(`span`,{className:`sc-nav-arrow left`,onClick:e=>{e.stopPropagation(),t(e=>Math.max(0,e-1))},children:`◄`}),(0,Q.jsx)(`span`,{className:`sc-nav-btn`,onClick:e=>{e.stopPropagation(),t(e=>Math.max(0,e-1))},children:`LB`}),(0,Q.jsx)(`span`,{className:`sc-nav-dot`}),(0,Q.jsx)(`span`,{className:`sc-nav-btn`,onClick:e=>{e.stopPropagation(),t(e=>Math.min(Qp.length-1,e+1))},children:`RB`}),(0,Q.jsx)(`span`,{className:`sc-nav-arrow right`,onClick:e=>{e.stopPropagation(),t(e=>Math.min(Qp.length-1,e+1))},children:`►`})]},`nav-${e}`),i&&(0,Q.jsx)(`div`,{className:`sc-main-portrait-shell${n?` mounted`:``}`,children:(0,Q.jsx)(`img`,{className:`sc-main-portrait`,src:Yp[e],alt:``})},`portrait-${e}`),(0,Q.jsx)(`style`,{children:`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@300&display=swap');
 
         .sc-root {
@@ -609,7 +609,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background: none;
           border: none;
           padding: 0 6px;
+          pointer-events: auto;
+          cursor: pointer;
+          transition: transform 0.1s;
         }
+        .sc-right-nav .sc-nav-btn:active { transform: scale(0.95); }
         .sc-right-nav .sc-nav-dot {
           width: 16px; height: 16px;
           border-radius: 999px;
@@ -623,6 +627,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #c4001a;
           display: inline-block;
           user-select: none;
+          pointer-events: auto;
+          cursor: pointer;
         }
         .sc-right-nav .sc-nav-arrow.left  { animation: sc-arrow-left  0.8s ease-in-out infinite; }
         .sc-right-nav .sc-nav-arrow.right { animation: sc-arrow-right 0.8s ease-in-out infinite; }
@@ -798,18 +804,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .sc-bar, .sc-bar-red { width: 95vw; height: 52px; }
           .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red { height: auto; min-height: 72px; padding-bottom: 5px; }
           
-          .sc-role { font-size: 26px; transform: rotate(0) !important; padding-left: 10px !important; }
-          .sc-label { font-size: 14px; letter-spacing: 0px; white-space: normal; line-height: 1.2; word-break: break-word; }
+          .sc-role { font-size: 26px; transform: rotate(0) !important; padding-left: 10px !important; z-index: 5; }
+          .sc-label { font-size: 14px; letter-spacing: 0px; white-space: normal; line-height: 1.2; word-break: break-word; z-index: 5; position: relative; }
           .sc-main { padding-left: 5px; text-align: left; }
-          .sc-char { display: none; }
+          
+          .sc-char { 
+            display: block !important; 
+            left: auto !important; 
+            right: 10px !important; 
+            max-width: 75px !important; 
+            clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%) !important; 
+            opacity: 0.8;
+          }
+          
+          .sc-bar-outer.active .sc-bar-fill {
+            clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%) !important;
+            background: rgba(255,255,255,0.15) !important;
+          }
           
           .sc-reveal-panel {
             width: 90vw; left: 5vw;
-            top: 20vh; height: auto; min-height: 60vh;
+            top: 20vh; height: auto; min-height: 0;
             transform: translateX(0) !important;
             clip-path: none !important;
             z-index: 20 !important;
-            background: rgba(255,255,255,0.95) !important;
+            background: rgba(15, 15, 20, 0.98) !important;
             border-left: 6px solid #e03d31;
             display: flex; flex-direction: column;
             border-radius: 8px; overflow: hidden;
@@ -829,8 +848,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 100%; height: auto; padding: 25px 15px;
             clip-path: none !important; text-align: left;
             align-items: flex-start;
+            background: transparent !important;
           }
-          .sc-reveal-upper-line { font-size: 15px; line-height: 1.6; margin-bottom: 8px; }
+          .sc-reveal-upper-line { font-size: 14px; line-height: 1.6; margin-bottom: 8px; }
           
           .sc-reveal-lower-bar {
             position: relative; top: 0; right: 0;
