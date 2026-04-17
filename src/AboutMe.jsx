@@ -474,50 +474,65 @@ export default function AboutMe() {
 
         @media (max-width: 768px) {
           .sc-bar, .sc-bar-red { width: 95vw; height: 52px; }
-          .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red { height: 72px; }
+          .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red { height: auto; min-height: 72px; padding-bottom: 5px; }
           
-          .sc-role { font-size: 32px; }
-          .sc-label { font-size: 16px; letter-spacing: 1px; }
-          .sc-main { padding-left: 10px; }
-          .sc-char { left: 65px; max-width: 80px; }
+          .sc-role { font-size: 26px; transform: rotate(0) !important; padding-left: 10px !important; }
+          .sc-label { font-size: 14px; letter-spacing: 0px; white-space: normal; line-height: 1.2; word-break: break-word; }
+          .sc-main { padding-left: 5px; text-align: left; }
+          .sc-char { display: none; }
           
           .sc-reveal-panel {
-            width: 120vw; left: -10vw;
-            top: 30vh; height: 60vh;
-            transform: translateX(-40px) rotate(-10deg);
+            width: 90vw; left: 5vw;
+            top: 20vh; height: auto; min-height: 60vh;
+            transform: translateX(0) !important;
+            clip-path: none !important;
+            z-index: 20 !important;
+            background: rgba(255,255,255,0.95) !important;
+            border-left: 6px solid #e03d31;
+            display: flex; flex-direction: column;
+            border-radius: 8px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
           }
           .sc-reveal-panel.mounted {
-            transform: translateX(0) rotate(-10deg);
-            animation: sc-reveal-bar-in-mob 0.46s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateX(0) !important;
+            animation: sc-reveal-bar-in-mob 0.4s ease-out !important;
           }
           @keyframes sc-reveal-bar-in-mob {
-            0%   { opacity: 0; transform: translateX(-80px) rotate(-10deg) scaleX(0.72); }
-            60%  { opacity: 0.96; transform: translateX(10px) rotate(-10deg) scaleX(1.03); }
-            100% { opacity: 0.92; transform: translateX(0) rotate(-10deg) scaleX(1); }
+            0%   { opacity: 0; transform: translateY(-20px) scale(0.95); }
+            100% { opacity: 0.95; transform: translateY(0) scale(1); }
           }
           
           .sc-reveal-upper-bar {
-            top: 5%; height: auto; padding: 25px 0;
-            clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+            position: relative; top: 0; left: 0;
+            width: 100%; height: auto; padding: 25px 15px;
+            clip-path: none !important; text-align: left;
+            align-items: flex-start;
           }
-          .sc-reveal-upper-line { font-size: 13px; line-height: 1.4; }
+          .sc-reveal-upper-line { font-size: 15px; line-height: 1.6; margin-bottom: 8px; }
           
           .sc-reveal-lower-bar {
-            top: 60%; width: 85%; height: auto; padding: 15px 0 15px 20px;
+            position: relative; top: 0; right: 0;
+            width: 100%; height: auto; padding: 15px;
+            clip-path: none !important;
             font-size: 14px;
+            background: #c4001a !important;
           }
           
           .sc-main-portrait-shell {
-            width: 80vw; right: -25vw; opacity: 0.6;
+            width: 100vw; right: 0; opacity: 0.25 !important;
+            z-index: 5 !important;
           }
+          .sc-main-portrait { transform: skewX(0) scale(1) !important; object-position: center !important; }
+          
           .sc-right-nav {
-            top: 2vh; left: -5vw;
-            animation: none;
-            transform: scale(0.6) rotate(-10deg);
+            top: unset; bottom: 8vh; left: 50vw;
+            transform: translateX(-50%) scale(0.8) !important;
+            animation: none !important;
+            z-index: 25 !important;
           }
           .sc-footer {
-            transform: scale(0.75); transform-origin: bottom right;
-            bottom: 10px; right: 10px;
+            transform: scale(0.7); transform-origin: bottom right;
+            bottom: 10px; right: 10px; z-index: 25;
           }
         }
       `}</style>

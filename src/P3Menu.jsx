@@ -210,6 +210,12 @@ export default function P3Menu({ onNavigate }) {
         .p3-name-tag span:first-child {
           color: rgba(0, 0, 0, 0.86);
         }
+
+        @media (max-width: 768px) {
+          .p3-name-tag { font-size: 45px; left: 10px; top: 10px; }
+          .p3-menu { transform: scale(0.48); transform-origin: left center; width: 100%; left: -5%; padding: 48px 10px; }
+          .p3-hint { bottom: 10px; right: 10px; transform: scale(0.75); transform-origin: bottom right; }
+        }
       `}</style>
 
       <div className="p3-overlay">
