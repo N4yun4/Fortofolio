@@ -11,72 +11,29 @@ import './App.css'
 
 function MusicPlayer() {
   const audioRef = useRef(null)
-  const [playing, setPlaying] = useState(false)
-  const [started, setStarted] = useState(false)
 
   useEffect(() => {
     const audio = audioRef.current
     audio.volume = 0.4
     audio.loop = true
 
+    // Attempt to play immediately (works if browser permits or user previously interacted)
+    audio.play().catch(() => {})
+
     const tryPlay = () => {
-      if (!started) {
-        audio.play().then(() => {
-          setPlaying(true)
-          setStarted(true)
-        }).catch(() => {})
-      }
+      audio.play().catch(() => {})
     }
 
     document.addEventListener('click', tryPlay, { once: true })
     document.addEventListener('keydown', tryPlay, { once: true })
+    
     return () => {
       document.removeEventListener('click', tryPlay)
       document.removeEventListener('keydown', tryPlay)
     }
-  }, [started])
+  }, [])
 
-  const toggle = (e) => {
-    e.stopPropagation()
-    const audio = audioRef.current
-    if (playing) {
-      audio.pause()
-      setPlaying(false)
-    } else {
-      audio.play().then(() => setPlaying(true)).catch(() => {})
-      setStarted(true)
-    }
-  }
-
-  return (
-    <>
-      <audio ref={audioRef} src={bgMusic} />
-      <button
-        onClick={toggle}
-        style={{
-          position: 'fixed',
-          bottom: 24,
-          left: 24,
-          zIndex: 9999,
-          background: 'rgba(0,0,0,0.55)',
-          border: '1px solid rgba(255,255,255,0.18)',
-          borderRadius: 6,
-          color: '#fff',
-          fontFamily: "'Anton', sans-serif",
-          fontSize: 12,
-          letterSpacing: 2,
-          padding: '6px 14px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
-        }}
-      >
-        <span style={{ fontSize: 16 }}>{playing ? '♪' : '♩'}</span>
-        {playing ? 'MUSIC ON' : 'MUSIC OFF'}
-      </button>
-    </>
-  )
+  return <audio ref={audioRef} src={bgMusic} autoPlay />
 }
 
 function MenuScreen() {
