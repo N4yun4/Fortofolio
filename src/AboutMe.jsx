@@ -471,6 +471,55 @@ export default function AboutMe() {
           border-radius: 3px;
           padding: 1px 6px; font-size: 11px;
         }
+
+        @media (max-width: 768px) {
+          .sc-bar, .sc-bar-red { width: 95vw; height: 52px; }
+          .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red { height: 72px; }
+          
+          .sc-role { font-size: 32px; }
+          .sc-label { font-size: 16px; letter-spacing: 1px; }
+          .sc-main { padding-left: 10px; }
+          .sc-char { left: 65px; max-width: 80px; }
+          
+          .sc-reveal-panel {
+            width: 120vw; left: -10vw;
+            top: 30vh; height: 60vh;
+            transform: translateX(-40px) rotate(-10deg);
+          }
+          .sc-reveal-panel.mounted {
+            transform: translateX(0) rotate(-10deg);
+            animation: sc-reveal-bar-in-mob 0.46s cubic-bezier(0.22, 1, 0.36, 1);
+          }
+          @keyframes sc-reveal-bar-in-mob {
+            0%   { opacity: 0; transform: translateX(-80px) rotate(-10deg) scaleX(0.72); }
+            60%  { opacity: 0.96; transform: translateX(10px) rotate(-10deg) scaleX(1.03); }
+            100% { opacity: 0.92; transform: translateX(0) rotate(-10deg) scaleX(1); }
+          }
+          
+          .sc-reveal-upper-bar {
+            top: 5%; height: auto; padding: 25px 0;
+            clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+          }
+          .sc-reveal-upper-line { font-size: 13px; line-height: 1.4; }
+          
+          .sc-reveal-lower-bar {
+            top: 60%; width: 85%; height: auto; padding: 15px 0 15px 20px;
+            font-size: 14px;
+          }
+          
+          .sc-main-portrait-shell {
+            width: 80vw; right: -25vw; opacity: 0.6;
+          }
+          .sc-right-nav {
+            top: 2vh; left: -5vw;
+            animation: none;
+            transform: scale(0.6) rotate(-10deg);
+          }
+          .sc-footer {
+            transform: scale(0.75); transform-origin: bottom right;
+            bottom: 10px; right: 10px;
+          }
+        }
       `}</style>
 
       <div className="sc-root" role="navigation">
